@@ -16,11 +16,76 @@ placeableHyperFurnace.max_health = 700
 placeableHyperFurnace.crafting_speed = 4.0
 placeableHyperFurnace.module_specification["module_slots"] = 6
 
-placeableHyperFurnace.animation.layers[1].filename = "__FactorioEndgameProduction__/graphics/item_hyperFurnace_image.png"
-placeableHyperFurnace.animation.layers[1].frame_count = 1
+placeableHyperFurnace.animation = {
+  layers = {
+    {
+      filename = "__FactorioEndgameProduction__/graphics/entity_hyperFurnace_image.png",
+      priority = "high",
+      width = 204,
+      height = 199,
+      frame_count = 1,
+      shift = util.by_pixel(-1.5, 1.5),
+      scale = 0.5,
+      hr_version =
+      {
+        filename = "__FactorioEndgameProduction__/graphics/entity_hyperFurnace_image.png",
+        priority = "high",
+        width = 204,
+        height = 199,
+        frame_count = 1,
+        shift = util.by_pixel(-1.25, 2),
+        scale = 0.5
+      }
+    },
+    {
+      filename = "__base__/graphics/entity/electric-furnace/electric-furnace-shadow.png",
+      priority = "high",
+      width = 129,
+      height = 100,
+      frame_count = 1,
+      shift = {0.421875, 0},
+      draw_as_shadow = true,
+      hr_version =
+      {
+        filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace-shadow.png",
+        priority = "high",
+        width = 227,
+        height = 171,
+        frame_count = 1,
+        draw_as_shadow = true,
+        shift = util.by_pixel(11.25, 7.75),
+        scale = 0.5
+      }
+    }
+  }
+}
 
-placeableHyperFurnace.animation.layers[2].filename = "__FactorioEndgameProduction__/graphics/item_hyperFurnace_image.png"
-placeableHyperFurnace.animation.layers[2].frame_count = 1
+placeableHyperFurnace.working_visualisations = {
+  animation = {
+    {
+      filename = "__base__/graphics/entity/electric-furnace/electric-furnace-heater.png",
+      priority = "high",
+      width = 25,
+      height = 15,
+      frame_count = 12,
+      animation_speed = 0.5,
+      shift = {0.015625, 0.890625},
+      tint = {r=0, g=0.5, b=1.0, a=1.0},
+      hr_version =
+      {
+        filename = "__base__/graphics/entity/electric-furnace/hr-electric-furnace-heater.png",
+        priority = "high",
+        width = 60,
+        height = 56,
+        frame_count = 12,
+        animation_speed = 0.5,
+        shift = util.by_pixel(1.75, 32.75),
+        tint = {r=0, g=0.5, b=1.0, a=1.0},
+        scale = 0.5
+      }
+    }
+  }
+}
 
 local recipeHyperFurnace = table.deepcopy(data.raw["recipe"]["electric-furnace"])
 recipeHyperFurnace.enabled = true
