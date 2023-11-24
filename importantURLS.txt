@@ -1,0 +1,6 @@
+techTree - https://davemcw.com/factorio/tech-tree/
+ref - https://github.com/marvint24/bigger-artillery/tree/main/bigger-artillery_VERSION
+versions - https://wiki.factorio.com/Version_history
+data names - https://wiki.factorio.com/Data.raw#item
+prototype api - https://lua-api.factorio.com/latest/prototypes/EntityPrototype.html#icons
+prototype creation - https://wiki.factorio.com/Tutorial:Modding_tutorial/Gangsir#Prototype_creation
